@@ -15,4 +15,9 @@ Instrucciones de uso:
 
 * Para crear un usuario nuevo $curl -i -H "Content-Type:application/json" -X POST http://localhost:3000/api/users -d '{"first_name": "Javier", "email": "myemail@gmail.com", "last_name": "Lopez", "avatar": "myimage.jpg"}'
 
+* Para la paginación usamos la url http://localhost:3000/api/users?page=#{number}
+
+* La documentaciòn se encuentra en spec/integration/users_spec.rb
+
+
 
