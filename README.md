@@ -1,25 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Api de prueba para la obtenciòn y creacion de nuevos usuarios
+Instrucciones de uso:
 
-Things you may want to cover:
+* clonar el repositorio usando git clone https://github.com/Peamolon/UserTest.git
 
-* Ruby version
+* Para correr la tarea y llenar la base de datos con los datos de la API usamos el comando bin/rake namespace:update_dates
 
-* System dependencies
+* Instalamos todas las gemas con bunlde install/ bundler 
 
-* Configuration
+* Nos movemos con cd a la carpeta llamada UserTest e iniciamos el rails s
 
-* Database creation
+* Para obtener todos los usuarios usaremos curl $curl -X GET --header 'Accept: application/json' 'http://localhost:3000/api/users'
 
-* Database initialization
+* Para crear un usuario nuevo $curl -i -H "Content-Type:application/json" -X POST http://localhost:3000/api/users -d '{"first_name": "Javier", "email": "myemail@gmail.com", "last_name": "Lopez", "avatar": "myimage.jpg"}'
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# UserTest
